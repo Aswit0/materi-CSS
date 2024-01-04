@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling</title>
+    <style>
+        /* First Line */
+        p::first-line {
+            color: blue;
+            font-size: 1.2em;
+        }
+
+        /* Marker */
+        ul::marker {
+            color: red;
+            font-size: 1.5em;
+        }
+
+        /* Selection */
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+
+        /* Placeholder */
+        input::placeholder {
+            color: gray;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>This is the first line of a paragraph. The rest of the text follows.
+        This is the Second line of a paragraph. The rest of the text follows</p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <input type="text" placeholder="Type something...">
+
+</body>
+
+</html>
