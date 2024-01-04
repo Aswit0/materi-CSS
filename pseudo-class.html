@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Interactive States */
+        button:hover {
+            background-color: #3498db;
+        }
+
+        a.visited-link:visited {
+            color: #8e44ad;
+        }
+
+        /* Form States */
+        input:enabled {
+            background-color: #ecf0f1;
+        }
+
+        input:disabled {
+            background-color: #bdc3c7;
+        }
+
+        button.submit-button:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+
+        /* Validation States */
+        input:valid {
+            border: 2px solid #2ecc71;
+        }
+
+        input:invalid {
+            border: 2px solid #e74c3c;
+        }
+
+        /* Element Index and Order */
+        .layered-element {
+            position: absolute;
+            z-index: 2;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <title>CSS States and Order Example</title>
+</head>
+
+<body>
+
+    <a href="https://myskill.id/course/css-pseudo-class" class="visited-link">Visited Link</a>
+
+    <button class="hover-button">Hover me</button>
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit" class="submit-button" disabled>Submit</button>
+    </form>
+
+    <div class="layered-element">Layered Element</div>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+</body>
+
+</html>
