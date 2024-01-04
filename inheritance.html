@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contoh CSS Keywords</title>
-  <style>
-    /* Gaya global untuk body */
-    body {
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh CSS Keywords</title>
+    <style>
+        /* Gaya global untuk body */
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-    /* Gaya untuk elemen div (induk) */
-    div {
-      color: blue; /* Atur warna teks div menjadi biru */
-    }
+        /* Gaya untuk elemen div (induk) */
+        div {
+            color: blue;
+            /* Atur warna teks div menjadi biru */
+        }
 
-    /* Gaya untuk paragraf di dalam div */
-    p {
-      color: inherit; /* Warisi warna teks dari div induk */
-      margin: initial; /* Atur margin ke nilai awal (default) */
-    }
+        /* Gaya untuk paragraf di dalam div */
+        p {
+            color: inherit;
+            /* Warisi warna teks dari div induk */
+            margin: initial;
+            /* Atur margin ke nilai awal (default) */
+        }
 
-    /* Gaya untuk elemen span */
-    span {
-      color: green; /* Atur warna teks span menjadi hijau */
-      margin: unset; /* Hapus margin, memungkinkan untuk diwarisi atau menggunakan nilai default */
-    }
-  </style>
+        /* Gaya untuk elemen span */
+        span {
+            color: green;
+            /* Atur warna teks span menjadi hijau */
+            margin: unset;
+            /* Hapus margin, memungkinkan untuk diwarisi atau menggunakan nilai default */
+        }
+    </style>
 </head>
-<body>
-  <!-- Div induk yang berisi paragraf -->
-  <div>
-    <p>Ini adalah paragraf dengan warna teks diwarisi dari div induk.</p>
-    <p>Ini adalah paragraf lain dengan warna teks diwarisi.</p>
-  </div>
 
-  <!-- Elemen span di luar div -->
-  <span>Ini adalah span dengan warna teks hijau dan margin yang dihapus.</span>
+<body>
+    <!-- Div induk yang berisi paragraf -->
+    <div>
+        <p>Ini adalah paragraf dengan warna teks diwarisi dari div induk.</p>
+        <p>Ini adalah paragraf lain dengan warna teks diwarisi.</p>
+    </div>
+
+    <!-- Elemen span di luar div -->
+    <span>Ini adalah span dengan warna teks hijau dan margin yang dihapus.</span>
 </body>
+
 </html>
