@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade Example</title>
+    <style>
+        /* User Agent Stylesheet */
+        p {
+            font-size: 16px;
+            /* Origin: User Agent Stylesheet */
+        }
+
+        /* Author Stylesheet */
+        p {
+            color: blue;
+            /* Specificity: 1 element selector, Origin: Author Stylesheet */
+        }
+
+        /* User Stylesheet */
+        p {
+            color: green !important;
+            /* Importance: Important, Origin: User Stylesheet */
+        }
+
+        /* Additional Author Stylesheet */
+        .highlight {
+            background-color: yellow;
+            /* Specificity: 1 class selector, Origin: Author Stylesheet */
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is a paragraph without a class.</p>
+    <p class="highlight">This is a highlighted paragraph with a class.</p>
+</body>
+
+</html>
+
+
+<!-- Dalam contoh ini, paragraf pertama akan memiliki warna teks hijau karena aturan tersebut berasal
+    dari User Stylesheet dan menggunakan !important. Paragraf kedua akan memiliki latar belakang kuning
+    karena menggunakan kelas .highlight yang ditetapkan oleh Author Stylesheet. -->
