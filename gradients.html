@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            gap: 50px;
+        }
+
+        .box {
+            height: 15rem;
+            width: 15rem;
+        }
+
+        .linear-gradient {
+            /*   background: linear-gradient(to right, red, maroon); */
+            /*   background: linear-gradient(45deg, aqua, maroon 80%); */
+            background: linear-gradient(45deg, darkred 20%, crimson, darkorange 60%, gold, bisque);
+        }
+
+        .radial-gradient {
+            border-radius: 50%;
+            /*   background: radial-gradient(darkred 20%, crimson, darkorange 60%, gold, bisque); */
+            background: radial-gradient(closest-side, darkorange 60%, gold, bisque, darkred 20%, crimson);
+        }
+
+        .conic-gradient {
+            background: conic-gradient(gold 20deg, lightcoral 20deg 190deg, mediumturquoise 190deg 220deg, plum 220deg 320deg, steelblue 320deg);
+            border-radius: 50%;
+            border: 10px solid;
+        }
+
+        .repeating-linear {
+         /* background: repeating-radial-gradient
+            background: repeating-conic-gradient */
+            background: repeating-linear-gradient(45deg,
+                    red,
+                    red 10px,
+                    white 30px,
+                    white 60px);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- gradiasi linear -->
+        <div class="box linear-gradient"></div>
+        <!-- gradiasi lingkaran -->
+        <div class="box radial-gradient"></div>
+        <!-- gradiasi 360 derajat -->
+        <div class="box conic-gradient"></div>
+        <!-- pengulangan gradiasi -->
+        <div class="box repeating-linear"></div>
+    </div>
+</body>
+
+</html>
